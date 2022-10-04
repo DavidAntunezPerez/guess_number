@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   info: string = '...';
-  secretnumber:number = Math.random() * 101;
+  secretnumber:number = Math.random() * 101; // Random number between 0 - 100
 
   constructor() {}
 
