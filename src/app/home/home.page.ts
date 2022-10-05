@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class HomePage {
   info: string = '...';
   nguess: number = 0;
-  secretnumber: number = Math.random() * 101; // Random number between 0 - 100
+  secretnumber: number = Math.round(Math.random() * 101); // Random number between 0 - 100
 
   constructor() {}
 
