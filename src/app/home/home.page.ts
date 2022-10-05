@@ -7,14 +7,20 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   info: string = '...';
-  nguess:number = 0;
-  secretnumber:number = Math.random() * 101; // Random number between 0 - 100
+  nguess: number = 0;
+  secretnumber: number = Math.random() * 101; // Random number between 0 - 100
 
   constructor() {}
 
-  guessNumber(num:number){
-    
+  guessNumber(num: number) {
+    if (this.nguess == this.secretnumber) {
+      this.info = 'CORRECT, good guess!!!';
+    }else if(this.nguess > this.secretnumber){
+      this.info = 'lower than this number, keep trying.'
+    }else if(this.nguess < this.secretnumber){
+      this.info = 'higher than this number, keep trying.'
+    }else{
+      this.info = 'ERROR.'
+    }
   }
-
-
 }
