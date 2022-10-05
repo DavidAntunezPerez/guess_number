@@ -21,7 +21,7 @@
     
       <ion-card-content>
         <!-- Number type input -->
-      <ion-input type="number" value="0" min="0" max="100" [(ngModel)]="nguess" required></ion-input>
+      <ion-input type="number" value="0" min="0" max="100" [(ngModel)]="nguess" (keyup.enter)="guessNumber(nguess)" required></ion-input>
       <!-- Button type input -->
       <ion-button (click)="guessNumber(nguess)" expand="full">GUESS</ion-button>
       <ion-text color="medium">Secret number is {{info}} </ion-text>
