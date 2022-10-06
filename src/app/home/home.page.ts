@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
   info: string = '...';
+  show: boolean = false;
   nguess: number = 0;
   secretnumber: number = Math.round(Math.random() * 101); // Random number between 0 - 100
 
@@ -15,12 +16,13 @@ export class HomePage {
   guessNumber(num: number) {
     if (this.nguess == this.secretnumber) {
       this.info = 'CORRECT, good guess!!!';
-    }else if(this.nguess > this.secretnumber){
-      this.info = 'lower than this number, keep trying.'
-    }else if(this.nguess < this.secretnumber){
-      this.info = 'higher than this number, keep trying.'
-    }else{
-      this.info = 'ERROR.'
+      this.show = true;
+    } else if (this.nguess > this.secretnumber) {
+      this.info = 'lower than this number, keep trying.';
+    } else if (this.nguess < this.secretnumber) {
+      this.info = 'higher than this number, keep trying.';
+    } else {
+      this.info = 'ERROR.';
     }
   }
 }
