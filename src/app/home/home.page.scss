@@ -16,10 +16,7 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
-  margin: 0;
 }
 
 #container a {
@@ -47,26 +44,29 @@ ion-item {
   --margin-bottom: 50px;
 }
 * {
-  font-size: 30px;
+  font-size: 1.06em;
 }
 ion-card {
   border-radius: 20px;
-  padding:3% 0;
 }
 ion-button{
   --border-radius:10px;
 }
 
-#title{padding-bottom: 3%;}
-@media only screen and (min-width: 1200px) {
-  #container{
-    margin: 0 20%;
-  }
-}
+
+
 #social{
   font-size: 0.6em;
 }
 a{
   font-size: 1em;
   color: #7a49a5;
+}
+@media only screen and (min-width: 1200px) {
+  #container{
+    margin: 0 20%;
+  }
+  *{
+    font-size:30px;
+  }
 }
