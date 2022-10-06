@@ -4,12 +4,12 @@
   left: 0;
   right: 0;
   top: 50%;
-  margin: 0 10%;
+  padding: 0 1%;
   transform: translateY(-50%);
 }
 
 #container strong {
-  font-size: 20px;
+  font-size: 15px;
   line-height: 26px;
 }
 
@@ -51,4 +51,15 @@ ion-item {
 }
 ion-card {
   border-radius: 20px;
+  padding:3% 0;
+}
+ion-button{
+  --border-radius:10px;
+}
+
+#title{padding-bottom: 3%;}
+@media only screen and (min-width: 1200px) {
+  #container{
+    margin: 0 20%;
+  }
 }
