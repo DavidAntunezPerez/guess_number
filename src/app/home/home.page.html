@@ -16,15 +16,17 @@
 
     <ion-card>
       <ion-card-header>
-        <ion-card-title id="title">GUESS THE <ion-text color="tertiary"><b>SECRET NUMBER</b></ion-text> </ion-card-title>
+        <ion-card-title id="title">GUESS THE <ion-text color="tertiary"><b>SECRET NUMBER</b></ion-text>
+        </ion-card-title>
       </ion-card-header>
 
       <ion-card-content>
         <!-- Number type input -->
         <ion-input type="number" value="0" min="0" max="100" [(ngModel)]="nguess" (keyup.enter)="guessNumber(nguess)"
-          required></ion-input>
+          placeholder="Select a number" clear-input=true required></ion-input>
         <!-- Button type input -->
-        <ion-button color="tertiary" (click)="guessNumber(nguess)" expand="block" fill="solid" size="large" strong="true">
+        <ion-button color="tertiary" (click)="guessNumber(nguess)" expand="block" fill="solid" size="large"
+          strong="true">
           <ion-icon slot="start" name="color-wand-outline"></ion-icon>
           GUESS
         </ion-button>
